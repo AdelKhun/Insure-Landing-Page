@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SETTING UP THE BASICS */
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+h2 {
+  font-size: 4rem;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.5rem;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 2rem;
+}
+
+/* HEADER SYTLING */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem 1rem 10rem;
+}
+nav {
+  display: flex;
+  width: 50%;
+  font-weight: 700;
+}
+.hamburger {
+  display: none;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+  align-items: center;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: hsl(256, 26%, 20%);
+  opacity: 0.7;
+}
+.nav-bar a:hover {
+  opacity: 1;
+}
+.view-button {
+  font-family: "Karla", sans-serif;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+.view-button:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  border: none;
+}
+
+/* INTRO STYLING */
+
+.intro {
+  padding: 10rem 10rem 7rem 10rem;
+  background-color: hsl(256, 26%, 20%);
+  position: relative;
+  margin-bottom: 20rem;
+}
+.bg-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bg-left {
+  position: absolute;
+  left: 0;
+  bottom: -20rem;
+}
+.intro-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.intro-image {
+  margin-bottom: -20rem;
+  margin-left: 2rem;
+}
+.intro-text {
+  width: 50%;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: white;
+}
+.intro-description {
+  line-height: 1.5rem;
+}
+.intro-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+#view-button2 {
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+  margin-top: 2rem;
+}
+#view-button2:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+  border: none;
+}
+
+/* FEATURES STYLING */
+
+h2 {
+  padding: 0 10rem 0 10rem;
+}
+.features {
+  padding: 0 10rem 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.snappy {
+  flex: 1;
+  margin-right: 1rem;
+}
+.snappy h5 {
+  margin: 1rem 0 1rem 0;
+}
+.snappy p {
+  line-height: 1.5rem;
+}
+.prices {
+  flex: 1;
+  margin-right: 1rem;
+}
+.prices h5 {
+  margin: 1rem 0 1rem 0;
+}
+.prices p {
+  line-height: 1.5rem;
+}
+.people {
+  flex: 1;
+}
+.people h5 {
+  margin: 1rem 0 1rem 0;
+}
+.people p {
+  line-height: 1.5rem;
+}
+
+/* FIND OUT MORE STYLING */
+
+.find-out-container {
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 3rem 5rem;
+  margin: 0 10rem 10rem 10rem;
+  align-items: center;
+  background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.find-out-container h2 {
+  padding: 0;
+  font-size: 3.5rem;
+}
+.title {
+  color: white;
+  width: 50%;
+  line-height: 4rem;
+}
+.find-out-button {
+  font-family: "Karla", sans-serif;
+  width: 10rem;
+  height: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+}
+.find-out-button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+  border: none;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 4rem 10rem 4rem 10rem;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.social-links ul {
+  display: flex;
+}
+.social-links li {
+  margin-right: 1rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.social-links li:hover {
+  opacity: 1;
+}
+.links {
+  margin-top: 2rem;
+  padding-right: 10rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.links li {
+  margin-bottom: 0.5rem;
+}
+.links li:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  .intro-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-image {
+    position: relative;
+    margin: 0;
+  }
+  .intro-text {
+    margin-top: 5rem;
+  }
+  .intro {
+    padding: 2rem;
+  }
+  .find-out-container {
+    background-image: none;
+  }
+  .find-out-container h2 {
+    font-size: 3rem;
+    width: 130%;
+  }
+  nav {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .prices {
+    margin: 3rem 0 3rem 0;
+  }
+  .find-out-container {
+    padding: 2rem;
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+  }
+  .links {
+    padding: 0;
+  }
+  header {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-active {
+    display: none;
+  }
+  .nav-bar {
+    flex-direction: column;
+    background-color: hsl(270, 9%, 17%);
+    height: 90vh;
+    width: 100vw;
+    padding: 2rem 0 20rem 0;
+    font-size: 1.3rem;
+  }
+  .nav-bar a {
+    color: white;
+    opacity: 1;
+  }
+  .nav-bar a:hover {
+    opacity: 0.8;
+  }
+  #view-button1 {
+    width: 90%;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+    font-size: 1.3rem;
+  }
+  #view-button1:hover {
+    background-color: white;
+    color: hsl(270, 9%, 17%);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  header {
+    padding: 0;
+  }
+  .intro {
+    padding: 0;
+    margin: 0;
+  }
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .intro-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .intro-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .bg-left {
+    display: none;
+  }
+  .bg-right {
+    display: none;
+  }
+  h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .find-out-container {
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 2rem 10rem 2rem;
+  }
+  .find-out-container h2 {
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .title {
+    line-height: 3rem;
+    width: 100%;
+  }
+  footer {
+    padding: 2rem;
+    background-image: url(images/bg-pattern-footer-mobile.svg);
+  }
+  .footer-header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .social-links {
+    margin-top: 1rem;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5rem;
+  }
+  h6 {
+    margin-top: 2rem;
+  }
+  .nav-bar {
+    background-image: url(images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+}
